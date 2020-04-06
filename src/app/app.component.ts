@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng9-myems';
+  clickme(){
+    alert("Inside the component")
+  }
 }
