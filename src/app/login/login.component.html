@@ -6,14 +6,14 @@
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="email">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="email" name="email">
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="password">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="password" name="passwrd">
       </div>
       <div class="form-group">
-        <buttton type="button" class="btn btn-primary" name="submit-btn" (click)="onClickLogin()">Login</buttton>
+        <button type="button" class="btn btn-primary" name="submit-btn" (click)="onClickLogin(email,password)">Login</button>
       </div>
     </form>
 </div>    
